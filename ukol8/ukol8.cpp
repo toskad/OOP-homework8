@@ -1,5 +1,9 @@
 ﻿#include <iostream>
 #include "Hero.h"
+#include "Inventory.h"
+#include "Weapon.h"
+#include "Shield.h"
+
 int main()
 {
 	Hero* h = new Hero();
@@ -20,4 +24,6 @@ int main()
 
 	i->useItem(1);
 	i->useItem(2);
+
+	
 }

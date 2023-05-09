@@ -1,5 +1,7 @@
 #pragma once
-#include "Inventory.h"
+class Weapon;
+class Shield;
+
 class Hero
 {
 private:
