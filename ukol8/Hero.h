@@ -3,8 +3,12 @@
 class Hero
 {
 private:
-	Inventory* inventory;
+	Weapon* weapon;
+	Shield* shield;
 public:
 	Hero();
-	Inventory* GetInventory();
+	void equipWeapon(Weapon* weapon);
+	void equipShield(Shield* shield);
+	Weapon* getWeapon();
+	Shield* getShield();
 };

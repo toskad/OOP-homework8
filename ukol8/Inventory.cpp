@@ -4,8 +4,9 @@
 
 using namespace std;
 
-Inventory::Inventory()
+Inventory::Inventory(Hero* hero)
 {
+	this->hero = hero;
 }
 
 void Inventory::addItem(Item* item)
@@ -19,4 +20,9 @@ void Inventory::PrintAllItems()
 	for (int i = 0; i < this->Items.size(); i++) {
 		cout << (i+1) << ") " << this->Items[i]->ToString() << endl;
 	}
+}
+
+void Inventory::useItem(int index)
+{
+	this->Items[index]->use(this->hero);
 }

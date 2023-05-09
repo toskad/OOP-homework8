@@ -7,5 +7,6 @@ private:
 public:
 	Shield(string name, int damageResist);
 	string ToString();
+	void use(Hero* hero);
 };
 

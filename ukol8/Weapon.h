@@ -7,5 +7,6 @@ private:
 public:
 	Weapon(string name, int bonusDamage);
 	string ToString();
+	void use(Hero* hero);
 };
 

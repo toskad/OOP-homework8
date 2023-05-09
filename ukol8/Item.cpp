@@ -1,5 +1,5 @@
 #include "Item.h"
-
+#include "Hero.h"
 Item::Item(string name)
 {
 	this->name = name;
@@ -8,4 +8,9 @@ Item::Item(string name)
 string Item::ToString()
 {
 	return this->name;
+}
+
+void Item::use(Hero* hero)
+{
+	
 }

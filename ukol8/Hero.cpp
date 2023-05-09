@@ -3,10 +3,26 @@
 
 Hero::Hero()
 {
-	this->inventory = new Inventory();
+	this->weapon = nullptr;
+	this->shield = nullptr;
 }
 
-Inventory* Hero::GetInventory()
+void Hero::equipWeapon(Weapon* weapon)
 {
-	return this->inventory;
+	this->weapon = weapon;
+}
+
+void Hero::equipShield(Shield* shield)
+{
+	this->shield = shield;
+}
+
+Weapon* Hero::getWeapon()
+{
+	return this->weapon;
+}
+
+Shield* Hero::getShield()
+{
+	return this->shield;
 }

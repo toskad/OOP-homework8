@@ -9,3 +9,8 @@ string Shield::ToString()
 {
 	return (Item::ToString() + "\nresist " + to_string(this->damageResist) + " damage\n");
 }
+
+void Shield::use(Hero* hero)
+{
+	hero->equipShield(this);
+}

@@ -12,3 +12,8 @@ string Weapon::ToString()
 {
 	return (Item::ToString() + "\ndeal " + to_string(this->bonusDamage) + " damage\n");
 }
+
+void Weapon::use(Hero* hero)
+{
+	hero->equipWeapon(this);
+}

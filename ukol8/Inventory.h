@@ -6,9 +6,11 @@ class Inventory
 {
 private:
 	vector<Item*> Items;
+	Hero* hero;
 public:
-	Inventory();
+	Inventory(Hero* hero);
 	void addItem(Item* item);
 	void PrintAllItems();
+	void useItem(int index);
 };
 
